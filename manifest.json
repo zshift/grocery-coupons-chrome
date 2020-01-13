@@ -1,0 +1,20 @@
+{
+    "name": "Grocery Coupon Clipper",
+    "version": "0.0.1",
+    "description": "Clips digital coupons. Currently only supports WinnDixie and Publix coupons.",
+    "manifest_version": 2,
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": false
+    },
+    "page_action": {
+
+    },
+    "icons": {
+        "16": "images/coupons16.png",
+        "32": "images/coupons32.png",
+        "48": "images/coupons48.png",
+        "128": "images/coupons128.png"
+    },
+    "permissions": ["activeTab", "declarativeContent"]
+  }
