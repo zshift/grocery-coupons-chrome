@@ -12,11 +12,15 @@ function sleep(ms) {
 
 async function clip() {
     let coupons = window.document.querySelectorAll('button.loading-button.tertiary');
+    console.log(`Detected ${coupons.length} possible coupons.`);
     for (let coupon of coupons) {
         await sleep(10);
         coupon.click();
     }
 }
 
-console.log('pugl')
-clip();
+// wait for page to finish loading :/
+async function main() {
+    await sleep(5000);
+    clip();
+}
